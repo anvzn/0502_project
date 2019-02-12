@@ -1,4 +1,4 @@
-SSN_white_list = [1324, 5678, 9101]
+SSN_white_list = [1324, 5678, 9101, 44557]
 
 while True:
 
@@ -6,7 +6,7 @@ while True:
 
 
     # check the length
-    if len(user_ssn_number) != 4:
+    if len(user_ssn_number) not in (4, 5):
         print('Invalid SSN, please check the format (0000)!!!')
         continue
 
