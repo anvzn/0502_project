@@ -13,3 +13,7 @@ while True:
     if not user_ssn_number.isdigit():
         print('Please enter digits only!!!')
         continue
+
+    if int(user_ssn_number) not in SSN_white_list:
+        print('Your permissions are prohibited, please contact your manager!')
+        continue
