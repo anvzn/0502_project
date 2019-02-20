@@ -1,17 +1,16 @@
 # All inclusive
-rots_variations = []
-rots_variations_arr = []
+
 def contain_all_rots(strng, arr):
-    rots_variations.clear()
-    rots_variations_arr.clear()
+    rots_variations = []
+    rots_variations_arr = []
     if len(strng) == 0 and len(arr) == 0:
-        return bool(True)
+        return True
     if len(strng) == 0 and len(arr) > 0:
-        return bool(True)
+        return True
     if len(strng) == 1 and strng in arr:
-        return bool(True)
+        return True
     if len(arr) == 0 and len(strng) != 0:
-        return bool(False)
+        return False
     if len(strng) > 1 and len(arr) != 0:
         strng_double = strng * 2
         rots_variations.append(strng)
@@ -26,9 +25,9 @@ def contain_all_rots(strng, arr):
                 rots_variations_arr.append(c)
         print(rots_variations_arr)
         if set(rots_variations) == set(rots_variations_arr):
-            return bool(True)
+            return True
         else:
-            return bool(False)
+            return False
 
 
 # print(contain_all_rots("ab", ["ab", "sjqb", "twZNsslC", "jqbs"]))

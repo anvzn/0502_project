@@ -1,9 +1,8 @@
 # Binary Representation of an Integer
-modified_bin_positive = []
-modified_bin_negative = []
+
 def showBits(n):
-    modified_bin_positive.clear()
-    modified_bin_negative.clear()
+    modified_bin_positive = []
+    modified_bin_negative = []
     if n == 0:
         return [0] * 32
     if n > 0:
@@ -13,9 +12,9 @@ def showBits(n):
         b = 1
         for c in bin(n)[2:]:
             if c == '1':
-                modified_bin_positive.append(b)
+                modified_bin_positive.append(int(c))
             if c == '0':
-                modified_bin_positive.append(a)
+                modified_bin_positive.append(int(c))
         positive_list_modified = positive_list[:-len_positive_bin] + modified_bin_positive
         return positive_list_modified
     if n < 0:

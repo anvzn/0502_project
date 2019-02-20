@@ -37,4 +37,4 @@ def build_a_wall(x=0, y=0):
         modified_wall = wall[1:]
         return modified_wall
 
-print(build_a_wall(5, 5))
+print(build_a_wall(0, 11))
