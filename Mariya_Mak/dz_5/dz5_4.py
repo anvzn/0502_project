@@ -23,7 +23,7 @@ for i in range(0, len(l1), 3):
        else:
            dic1[l1[i]] = {l1[i + 1]: int(l1[i+2])}
 
-dic2 = sorted(dic1.items(), key=lambda x: x[1])
+#dic2 = sorted(dic1.items(), key=lambda x: x[1])
 
 
-print()
+#print()
